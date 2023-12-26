@@ -17,7 +17,7 @@ logInForm.addEventListener("submit", (event) => {
           //login
           sessionStorage.setItem("successLogin", JSON.stringify(users[i]));
           if (sessionStorage.getItem("successLogin")) {
-            window.location.href = "http://127.0.0.1:5500/homePage.html";
+            window.location.href = "https://regandlog.netlify.app/homePage.html";
           }
           return;
         } else {
@@ -315,6 +315,6 @@ function submitRegForm() {
   localStorage.setItem("users", JSON.stringify(users));
   sessionStorage.setItem("successLogin", JSON.stringify(user));
   if (sessionStorage.getItem("successLogin")) {
-    window.location.href = "http://127.0.0.1:5500/homePage.html";
+    window.location.href = "https://regandlog.netlify.app/homePage.html";
   }
 }
