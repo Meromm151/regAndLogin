@@ -12,7 +12,7 @@ logInForm.addEventListener("submit", (event) => {
   event.preventDefault();
   if (users.length > 0) {
     for (let i = 0; i < users.length; i++) {
-      if (logEmail.value.toLowerCase == users[i].userMail) {
+      if (logEmail.value.toLowerCase() == users[i].userMail) {
         if (logPassword.value == users[i].userPassword) {
           //login
           sessionStorage.setItem("successLogin", JSON.stringify(users[i]));
