@@ -12,7 +12,7 @@ logInForm.addEventListener("submit", (event) => {
   event.preventDefault();
   if (users.length > 0) {
     for (let i = 0; i < users.length; i++) {
-      if (logEmail.value == users[i].userMail) {
+      if (logEmail.value.toLowerCase == users[i].userMail) {
         if (logPassword.value == users[i].userPassword) {
           //login
           sessionStorage.setItem("successLogin", JSON.stringify(users[i]));
@@ -308,7 +308,7 @@ function regFunction(regName, regmail, regPassword) {
 function submitRegForm() {
   user = {
     userName: regName.value,
-    userMail: regmail.value,
+    userMail: regmail.value.toLowerCase(),
     userPassword: regPassword.value,
   };
   users.push(user);
