@@ -225,7 +225,7 @@ function regmailValDanger(regmail) {
 }
 function regMailNotDuplicated() {
   for (let i = 0; i < users.length; i++) {
-    if (users[i].userMail == regmail.value) {
+    if (users[i].userMail == regmail.value.toLowerCase()) {
       if (!regmail.parentElement.classList.contains("is-invalid")) {
         regmail.parentElement.classList.add("is-invalid");
         let span = document.createElement("span");
