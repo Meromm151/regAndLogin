@@ -1,0 +1,75 @@
+.main-page{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right top, #0f396b, #283a73, #3e397a, #54367d, #69327e, #7e3380, #923381, #a53480, #bc3f84, #d34b87, #e95889, #fd678a);
+}
+.btn-outline-none{
+  outline: none;
+}
+.input-container{
+  margin: auto;
+  width: 100%;
+}
+.input-container{
+  border: 2px solid white;
+  padding-left: 0;
+  width: calc(100%);
+  margin-bottom: 15px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+.input-container input{
+  padding: 10px;
+  width: 90%;
+  height: 100%;
+  outline: none;
+  border: 0;
+  caret-color: white;
+  color: white !important;
+}
+
+button{
+  width: 100%;
+  margin: auto;
+}
+span.or{
+  margin-top: 10px;
+  display: inline-block;
+  position: relative;
+}
+span.or::after,span.or::before{
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 2px;
+  background-color: gray;
+  transform: translateY(-50%);
+}
+span.or::after{
+left: 130%;
+top: 50%;
+}
+span.or::before{
+  right: 130%;
+  top: 50%;
+}
+a{
+  transition: 0.3s;
+}
+a.facebook:hover{
+  color: #0866FF !important;
+}
+a.google:hover{
+  color: #DB4437 !important;
+}
+.is-invalid{
+  border-color: red;
+}
+span.invalid{
+  font-size: 14px;
+  color: red;
+  margin-block: 8px;
+  margin-left: 15px;
+  display: block;
+  text-align: left;
+}

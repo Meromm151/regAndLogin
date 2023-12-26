@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- bootstarp -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- main style -->
+  <link rel="stylesheet" href="css/main.css">
+  <title>Home Page</title>
+</head>
+<body>
+  <div class="main-page">
+    <nav class="position-fixed w-100 bg-dark">
+      <div class="container d-flex justify-content-between align-items-center my-3 text-white ">
+        <h2><a  href="#" class="pe-auto text-white  text-decoration-none">Future Tech</a></h2>
+        <a id="logOut" href="index.html" class="p-3 bg-danger text-white rounded-5 text-decoration-none fw-bold pe-auto">Log Out</a>
+      </div>
+    </nav>
+    <div class="container vh-100 d-flex align-items-center justify-content-center">
+      <div class="m-auto text-center fs-1">welcome <h3 id="homePageName" class="p-3 bg-dark text-white rounded-5"></h3></div>
+    </div>
+  </div>
+  <!-- bootstrap JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("homePageName").innerHTML =  JSON.parse(sessionStorage.getItem("successLogin")).userName;
+  </script>
+</body>
+</html>

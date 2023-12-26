@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- bootstarp -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- main style -->
+  <link rel="stylesheet" href="css/main.css">
+  <title>Document</title>
+</head>
+<body class="overflow-hidden">
+  <div class="main-page text-white">
+    <div class="row align-items-center justify-content-center h-100">
+      <div class="login-page col-10 bg-dark shadow-lg rounded-4 overflow-hidden">
+        <div class="row">
+          <div id="changableSide" class="login-side text-center col-5 p-5">
+            <div id="loginPage">
+              <p class="fs-5">Welcome To</p>
+              <h1 >Future Tech</h1>
+              <p class="text-light p-2">Log in to get in the Future Tech </p>
+              <form action="" class="login d-flex flex-column m-auto" id="logInForm">
+                <div>
+                  <div class="input-container">
+                    <label for="logEmail"class="fa-solid fa-user"></label>
+                    <input id="logEmail" type="email" placeholder="User email" class=" bg-transparent btn-outline-none">
+                  </div>
+                </div>
+                <div>
+                  <div class="input-container">
+                    <label for="logPassword" class="fa-solid fa-lock"></label>
+                    <input id="logPassword" type="password" placeholder="Password" class=" bg-transparent btn-outline-none">
+                  </div>
+                </div>
+                <button  type="submit" class="btn btn-danger my-3 rounded-5">LOG IN</button>
+              </form>
+              <div class="regestration">
+                <p class="d-inline">Dont have an account?</p>
+                <button id="signUp" class="d-inline btn text-danger">Sign Up Now</button>
+              </div>
+              <div class="login-option">
+                <span class="or">OR</span>
+                <div class="icon-group d-flex justify-content-center align-items-center">
+                  <div class="login-option-icon">
+                    <a href="new-service.html" target="_blank" class="text-decoration-none text-white facebook"><i class="fa-brands fa-facebook fs-1 p-3"></i></a>
+                  </div>
+                  <div class="login-option-icon">
+                    <a href="new-service.html" target="_blank" class="text-decoration-none text-white google"><i class="fa-brands fa-google fs-1 p-3"></i></a>
+                  </div>
+                </div>
+              </div>
+              </div>
+          </div>
+          <div class="design-side col-7 h-100"><img src="image/mixedreality.jpeg" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- bootstrap JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
